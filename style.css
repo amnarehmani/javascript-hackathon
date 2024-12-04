@@ -90,7 +90,7 @@ input:focus~label,
 input:not(:placeholder-shown)~label {
   top: -15px;
   font-size: 0.8rem;
-  color: #1dd1a1; /* Coral color for label text */
+  color: #1dd1a1; 
 }
 
 button {
@@ -100,7 +100,7 @@ button {
   font-size: 1.1rem;
   font-weight: bold;
   color: white;
-  background: linear-gradient(90deg, #1dd1a1, #54a0ff); /* Teal and Coral gradient */
+  background: linear-gradient(90deg, #1dd1a1, #54a0ff); 
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -119,7 +119,7 @@ button:hover {
 }
 
 .recover a {
-  color: #1dd1a1; /* Coral link color */
+  color: #1dd1a1; 
   text-decoration: none;
   font-weight: bold;
 }
@@ -144,7 +144,7 @@ button:hover {
 
 .icons i:hover {
   transform: scale(1.2);
-  color: #1dd1a1; /* Coral hover effect */
+  color: #1dd1a1; 
 }
 
 .links {
@@ -162,7 +162,7 @@ button:hover {
   border: none;
   font-size: 0.9rem;
   font-weight: bold;
-  color: #1dd1a1; /* Coral button color */
+  color: #1dd1a1; 
   cursor: pointer;
   text-decoration: underline;
 }

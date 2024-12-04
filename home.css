@@ -17,7 +17,7 @@ body {
   padding: 1rem 2rem;
   background-color: #1f2b3b;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  flex-wrap: wrap;  /* Allow items to wrap on smaller screens */
+  flex-wrap: wrap;  
 }
 
 .logo {
@@ -211,7 +211,7 @@ body {
   color: #8a97a6;
 }
 
-.newsletter button {
+.newsletterButton {
   padding: 12px 25px;
   background: #00ffc6;
   color: #121212;
@@ -286,4 +286,80 @@ footer {
   .newsletter button {
     width: 100%;
   }
+}
+
+.blog-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+input, textarea, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.addBlog {
+    background-color: teal;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.addBlog:hover {
+    background-color: darkcyan;
+}
+
+.notes {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    color: #10171e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin: 0;
+}
+
+.blogButton {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.card .blogButton:hover {
+    background-color: darkred;
+}
+
+@media (max-width: 600px) {
+    .blog-container, .notes {
+        padding: 10px;
+    }
+
+    input, textarea, select, button {
+        font-size: 14px;
+    }
+
+    .card {
+        padding: 10px;
+    }
 }
