@@ -1,0 +1,289 @@
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #f1f1f1;
+  background-color: #121212;
+}
+
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1f2b3b;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  flex-wrap: wrap;  /* Allow items to wrap on smaller screens */
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #00ffc6;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-bar input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 20px;
+  width: 220px;
+  background-color: #2e3b4e;
+  color: #00ffc6;
+}
+
+.search-bar input::placeholder {
+  color: #8a97a6;
+}
+
+.search-bar button {
+  background-color: #00ffc6;
+  color: #121212;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.search-bar button:hover {
+  background-color: #00cfae;
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+      justify-content: center;  
+  }
+
+  .logo {
+      font-size: 1.6rem;
+      text-align: center;
+      margin-bottom: 1rem;
+  }
+
+  .search-bar {
+      width: 100%;
+      justify-content: center;
+      gap: 5px;
+  }
+
+  .search-bar input {
+      width: 100%;
+      max-width: 300px;
+  }
+
+  .search-bar button {
+      width: auto;
+  }
+}
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to bottom right, #1f2b3b, #10171e);
+  color: #00ffc6;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+
+.trending {
+  padding: 40px 20px;
+  background: #10171e;
+  text-align: center;
+}
+
+.trending h2 {
+  font-size: 2rem;
+  color: #00ffc6;
+  margin-bottom: 20px;
+}
+
+.trending ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.trending li {
+  background: #1f2b3b;
+  color: #f1f1f1;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 500;
+  list-style: none;
+  transition: all 0.3s ease;
+}
+
+.trending li:hover {
+  background: #00ffc6;
+  color: #121212;
+}
+
+
+.blog-list {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.blog-list article {
+  background: #1f2b3b;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-list article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+.blog-list h3 {
+  font-size: 1.6rem;
+  color: #00ffc6;
+}
+
+.blog-list p {
+  font-size: 1rem;
+  color: #8a97a6;
+}
+
+.blog-list a {
+  color: #00ffc6;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+
+.newsletter {
+  padding: 50px 20px;
+  background: linear-gradient(to right, #10171e, #1f2b3b);
+  color: #f1f1f1;
+  text-align: center;
+}
+
+.newsletter h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.newsletter input {
+  padding: 12px;
+  width: 250px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  background: #2e3b4e;
+  color: #00ffc6;
+}
+
+.newsletter input::placeholder {
+  color: #8a97a6;
+}
+
+.newsletter button {
+  padding: 12px 25px;
+  background: #00ffc6;
+  color: #121212;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.newsletter button:hover {
+  background: #00cfae;
+}
+
+
+footer {
+  background: #1f2b3b;
+  color: #8a97a6;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  .search-bar {
+    width: 100%;
+    gap: 5px;
+  }
+
+  .search-bar input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .search-bar button {
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .trending ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog-list {
+    padding: 20px;
+  }
+
+  .newsletter input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .newsletter button {
+    width: 100%;
+  }
+}

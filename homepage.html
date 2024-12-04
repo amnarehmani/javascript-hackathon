@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coranu - Thoughts, Ideas, and Stories</title>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" 
+  integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">MyBlog</div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search...">
+          <a href="signuplogin.html">
+          <button class="search-btn" >Login/Signup</button> </a>
+        </div>
+    </nav>
+      <main>
+        <section class="hero">
+          <h1>Thoughts, Ideas, and Stories</h1>
+          <p>A space where creativity flows and ideas take shape.</p>
+        </section>
+    
+        <section class="trending">
+          <h2>Trending Topics</h2>
+          <ul>
+            <li>Design Thinking</li>
+            <li>Technology</li>
+            <li>Web</li>
+            <li>Programming</li>
+          </ul>
+        </section>
+    
+        <section class="blog-list">
+          <article>
+            <h3>Powerful Trading Tools and Features</h3>
+            <p>For Experienced Investors</p>
+            <a href="#">Read more</a>
+          </article>
+          <article>
+            <h3>Master JavaScript: 10 Essential Tips</h3>
+            <p>Every Developer Must Know</p>
+            <a href="#">Read more</a>
+          </article>
+        </section>
+    
+        <section class="newsletter">
+          <h2>Join Our Newsletter</h2>
+          <form id="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+      </main>
+
+      <section class="add-post">
+        <h2>Add New Post</h2>
+        <form id="post-form">
+          <label for="category">Category:</label>
+          <select id="category" required>
+            <option value="">Select Category</option>
+            <option value="Design Thinking">Design Thinking</option>
+            <option value="Technology">Technology</option>
+            <option value="Web">Web</option>
+            <option value="Programming">Programming</option>
+          </select>
+      
+          <label for="post-title">Post Title:</label>
+          <input type="text" id="post-title" placeholder="Enter post title" required>
+      
+          <label for="post-content">Content:</label>
+          <textarea id="post-content" placeholder="Enter your post content" required></textarea>
+      
+          <button type="submit">Add Post</button>
+        </form>
+      </section>
+      
+      <section class="blog-list" id="blog-list">
+        <h2>Recent Posts</h2>
+        <!-- Dynamically generated posts will appear here -->
+      </section>
+      
+    
+      <footer>
+        <p>&copy; 2024 Coranu</p>
+      </footer>
+    <script src="script.js"></script>
+</body>
+</html>
